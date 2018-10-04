@@ -1,0 +1,246 @@
+/* Global Styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #303030;
+    height: 100%;
+    margin: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Nav bar*/
+.navbar{
+    background-color:black;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 13px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.navbar ul{
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+.icon a {
+    float: right;
+    padding: 0px 20px 15px 10px;
+}
+
+/* Sidebar */
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover{
+    color:#fff;
+}
+
+.side-nav .btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Home */
+#background-img{
+    background: url(../img/codingPic2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#main{
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+}
+
+
+#main h1{
+    margin-top: 30vh;
+}
+
+#main h2{
+    margin-top: 15vh;
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-weight: 400;
+    color: white;
+}
+
+
+h1.lg-heading, h2.lg-heading, h3.lg-heading{
+    font-size: 5rem; 
+    background: rgba(7, 7, 7, 0.342); 
+}
+
+h1.sm-heading, h2.sm-heading, h3.sm-heading{
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(10, 3, 3, 0.342); 
+}
+
+/* About */
+.about-info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image{
+    grid-area: bioimage;
+    margin: auto;
+    padding-bottom: 40px;
+    border-radius: 20%;
+}
+
+.bio{
+    grid-area: bio;
+    font-size: 1.5rem;
+}
+
+.job-1{
+    grid-area: job1;
+    font-weight: 200;
+    color: white;
+}
+
+.job-2{
+    grid-area: job2;
+    font-weight: 200;
+    color: white;
+}
+
+.job-3{
+    grid-area: job3;
+    font-weight: 200;
+    color: white;
+}
+
+img.resize {
+    max-width:70%;
+    max-height:70%;
+  }
+
+.job{
+    background: lighten(gray, 5);
+    background: #484848;
+}
+
+.bio p{
+    color: white;
+}
+
+/* Work/Projects */
+.projects{
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.projects a{
+    text-decoration: none;
+    color: white;
+}
+
+.projects img{
+    width: 100%;
+    border: 3px #fff solid;
+}
+
+/* Contact */
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contactInfo{
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+
+
+/*Button Styles*/
+.btn {
+    display: block;
+    padding: 0.5rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+}
+
+.btn-dark{
+    background: black;
+}
+
+.btn-light{
+    background: #808080;
+}
+
+#main-footer{
+    text-align: center;
+    padding: 1rem;
+    height: 60px;
+    color: white;
+}
+
+@media(max-width: 568px) {
+    .navbar-nav{display:none}
+}
+
